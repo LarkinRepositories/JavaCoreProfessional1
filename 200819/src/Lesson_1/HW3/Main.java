@@ -8,9 +8,11 @@ public class Main {
     public static void main(String[] args) {
        Box<Apple> appleBox = new Box<>(new Apple(), new Apple(), new Apple(), new Apple());
        Box<Orange> orangeBox = new Box<>(new Orange(), new Orange());
-
+       Box<Apple> emptyAppleBox = new Box<>();
         System.out.println(appleBox.compare(orangeBox));
-        System.out.println();
+        appleBox.sprinkle(emptyAppleBox);
+        System.out.println(appleBox.toString());
+        System.out.println(emptyAppleBox.toString());
 
     }
 }
