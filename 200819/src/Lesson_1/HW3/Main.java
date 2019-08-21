@@ -13,6 +13,5 @@ public class Main {
        appleBox.sprinkle(emptyAppleBox);
        System.out.println(appleBox.toString());
        System.out.println(emptyAppleBox.toString());
-
     }
 }

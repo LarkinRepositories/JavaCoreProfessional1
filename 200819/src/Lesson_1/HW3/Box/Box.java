@@ -10,16 +10,10 @@ public class Box<T extends Fruit> {
 
    public Box(T...fruits) {
        this.fruits = new ArrayList<>(Arrays.asList(fruits));
-       for (Fruit fruit: fruits) {
-           this.weight += fruit.getWeight();
-       }
    }
 
     public Box(List<T> fruits) {
        this.fruits = fruits;
-       for (Fruit fruit: fruits) {
-           this.weight += fruit.getWeight();
-       }
     }
 
     public void add(T...fruits) {
@@ -27,6 +21,9 @@ public class Box<T extends Fruit> {
     }
 
     public float getWeight() {
+        for (T fruit:this.fruits) {
+            this.weight += fruit.getWeight();
+        }
         return weight;
     }
 
