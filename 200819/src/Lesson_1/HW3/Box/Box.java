@@ -5,11 +5,11 @@ import Lesson_1.HW3.Fruits.Fruit;
 import java.util.*;
 
 public class Box<T extends Fruit> {
-   private List<T> fruits;
+   private List<T> fruits = new ArrayList<>();
    private float weight = 0.0f;
 
-   public Box(T...fruits) {
-       this.fruits = new ArrayList<>(Arrays.asList(fruits));
+   public Box() {
+
    }
 
     public Box(List<T> fruits) {
