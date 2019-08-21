@@ -9,9 +9,9 @@ public class Main {
       Box<Apple> appleBox = new Box<>();
       appleBox.add(new Apple(), new Apple(), new Apple(), new Apple());
       Box<Orange> orangeBox = new Box<>();
+      orangeBox.add(new Orange(), new Orange(), new Orange());
       Box<Apple> anotherAppleBox = new Box<>();
       anotherAppleBox.add(new Apple());
-      orangeBox.add(new Orange(), new Orange(), new Orange());
       System.out.println(appleBox.compare(orangeBox));
       System.out.println(appleBox.getWeight());
       appleBox.sprinkle(anotherAppleBox);
