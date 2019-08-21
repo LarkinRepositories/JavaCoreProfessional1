@@ -32,9 +32,7 @@ public class Box<T extends Fruit> {
     }
 
     public void sprinkle(Box<T> box) {
-       if (box != null)
        box.fruits.addAll(this.fruits);
-       else box = new Box<T>(this.fruits);
        this.fruits.clear();
     }
 
