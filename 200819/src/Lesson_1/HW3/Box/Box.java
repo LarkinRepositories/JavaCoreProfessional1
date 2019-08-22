@@ -21,10 +21,7 @@ public class Box<T extends Fruit> {
     }
 
     public float getWeight() {
-        for (T fruit:this.fruits) {
-            this.weight += fruit.getWeight();
-        }
-        return weight;
+       return this.fruits.size() * this.fruits.get(0).getWeight();
     }
 
     public boolean compare(Box<?> box) {
