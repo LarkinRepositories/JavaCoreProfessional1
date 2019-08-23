@@ -32,7 +32,7 @@ public class AuthService {
     }
 
     public static int getUserIDByLoginAndPass(String login, String password) throws SQLException {
-        String query = String.format("SELECT id FROM users WHERE login='%s' and password = '%s'", login, password.hashCode());
+        String query = String.format("SELECT id FROM users WHERE login='%s' and password = '%s'", login, password);
         ResultSet rs = statement.executeQuery(query);
         if (rs.next()) return rs.getInt(1);
         return 0;
