@@ -10,8 +10,11 @@ public class AuthService {
 
 
     public static void connect() throws ClassNotFoundException, SQLException {
-        Class.forName("org.postgresql.Driver");
-        connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/zChat", "postgres", "postgres");
+//        Class.forName("org.postgresql.Driver");
+//        connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/zChat", "postgres", "postgres");
+//        statement = connection.createStatement();
+        Class.forName("org.sqlite.JDBC");
+        connection = DriverManager.getConnection("jdbc:sqlite:\\db\\zChat");
         statement = connection.createStatement();
     }
 
