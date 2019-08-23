@@ -1,0 +1,60 @@
+
+
+#rootPane {
+    -fx-background-color: #666699;
+}
+
+#chatPane {
+    -fx-background-color: #666699;
+}
+
+#inputMessageArea{
+    -fx-padding: 0 19;
+    -fx-background-color: transparent, white, transparent,white;
+    -fx-background-insets: 0, 6, 0;
+    -fx-background-radius: 8em;
+}
+
+#sendMsgButton{
+    -fx-background-color: white;
+    -fx-shape: "m 138.55021,89.698036 v 0 l 1.27487,-1.138164 -1.2721,-1.016698 c 4.08005,1.020056 4.33904,0.732386 -0.003,2.154862 z";
+}
+
+#sendMsgButton:hover{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5) , 0.5, 0.5, 2, 2);
+}
+#emojiList{
+    -fx-font-size: 16px;
+    -fx-padding: 2;
+    -fx-text-fill: chocolate;
+    -fx-background-color: rgba(255,255,255,0.7);
+}
+
+#emojiButton{
+    -fx-min-width: 15px;
+    -fx-min-height: 15px;
+    -fx-padding: 2;
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    -fx-text-fill: chocolate;
+    -fx-shape: "M 95.250002,86.845238 A 17.008928,17.386906 0 0 1 78.241074,104.23214 17.008928,
+    17.386906 0 0 1 61.232145,86.845238 17.008928,17.386906 0 0 1 78.241074,69.458332 17.008928,
+    17.386906 0 0 1 95.250002,86.845238 Z";
+}
+#chatBox {
+    -fx-background-color: linear-gradient(to right, #666699, #8585ad);
+    -fx-padding: 20px;
+    -fx-background-insets: -25px;
+}
+#messageArea {
+    -fx-background-color: #666699;
+    -fx-font-size: 15px;
+    /*-fx-font-style: oblique;*/
+    -fx-font-weight: bold;
+    -fx-opacity: 50%;
+}
+#logoutButton {
+    -fx-background-radius: 50%;
+    -fx-background-color: transparent;
+    -fx-graphic: url("../img/logout-1.png") ;
+}
