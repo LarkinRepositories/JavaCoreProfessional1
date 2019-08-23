@@ -33,7 +33,7 @@ public class ClientHandler {
                         if (str.startsWith("/auth")) {
                             String[] tokens = str.split(" ");
                             userID = AuthService.getUserIDByLoginAndPass(tokens[1], tokens[2]);
-                            AuthService.passToHashCode(userID, tokens[2]);
+                            //AuthService.passToHashCode(userID, tokens[2]);
                             nickname = AuthService.getNickNameByLoginAndPass(tokens[1], tokens[2]);
                             if (nickname != null)  {
                                 if (!server.isNicknameBusy(nickname)) {
